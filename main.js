@@ -170,7 +170,7 @@ define(function (require, exports, module) {
     
     function changeDirectory(newPath) {
         console.log("[brackets-ftp] Changing directory...");    
-        $("#bracketsftp-filebrowser .table-container").toggleClass("loading");
+        $(".tc-spinner").toggleClass("loading");
         $("#bracketsftp-filebrowser .table-container table").fadeOut(100);
         if (newPath === undefined || newPath === "") {
             currentRemoteDirectory = projectFtpDetails.remotepath;                 
@@ -378,7 +378,7 @@ define(function (require, exports, module) {
                 .hide()
                 .fadeIn(50);
             $("#bracketsftp-filebrowser .currentDirectory").text(currentRemoteDirectory);
-            $("#bracketsftp-filebrowser .table-container").toggleClass("loading");
+            $(".tc-spinner").toggleClass("loading");
             
         });
         
