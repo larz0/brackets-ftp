@@ -96,7 +96,13 @@
     margin: 0 0 0 10px;
 }
 
+.bracketsftp-folder {
+    color: #222;
+    font-weight: 500;
+}
+
 #bracketsftp-filebrowser .file-size {
+    padding-right: 10px;
     text-align: right;    
 }
 
